@@ -1,0 +1,14 @@
+<workflow name="ComplianceWorkFlow.Keys.REQUIREMENT NAME"
+          start="main">
+    <sequence id="main">
+        <activity id="Workflow.REQUIREMENT NAME"
+                  type="Radar.Logic.Workflow.Tasks.RunTemplate">
+            {
+                TemplateName: "TEMPLATE NAME FROM FORM",
+                DueDate: "0d",
+                DueAfter: "@@End",
+                AssignTo: "@@Self"
+            }
+        </activity>
+    </sequence>
+</workflow>
